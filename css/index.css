@@ -1,11 +1,3 @@
-.btn-hover {
-  border-radius: 5px;
-  background-color: #FFFFFF;
-  color: #22283A;
-  font-size: 1.6rem;
-  cursor: pointer;
-  transition: 0.1s ease;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -139,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -176,9 +169,13 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.8);
   padding: 0 0 4px;
   border: 2px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
 }
 nav h1 {
   margin: 11px 0 13px;
@@ -194,6 +191,15 @@ nav .nav-links a {
   color: black;
   font-size: 1.6rem;
   padding: 6px 16px;
+  transition: 0.2s ease;
+}
+nav .nav-links a:hover {
+  color: #FFFFFF;
+  background-color: #22283A;
+  transition: 0.2s ease;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro img {
   width: 100%;
