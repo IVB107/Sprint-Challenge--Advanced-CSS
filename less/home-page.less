@@ -75,9 +75,16 @@
 
       .btn {
         button {
-          .button;
-
-          @media @mobile {
+          .button(@white, @btn-bg-color);
+          width: 100px;
+          height: 34px;
+          padding: 6px 0;
+        }
+        button:hover {
+          .btn-hover;
+        }
+        @media @mobile {
+          button {
             width: 100%;
             height: 75px;
           }

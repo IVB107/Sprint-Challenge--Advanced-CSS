@@ -19,12 +19,15 @@
     color: black;
     font-size: 1.6rem;
 }
-.button() {
+.button(@color, @bg-color) {
     .border-radius;
-    background-color: @btn-bg-color;
-    color: white;
-    width: 100px;
-    height: 34px;
-    padding: 6px 0;
+    background-color: @bg-color;
+    color: @color;
     font-size: 1.6rem;
+    transition: .1s ease;
+}
+.btn-hover {
+    .button(@btn-bg-color, @white);
+    cursor: pointer;
+    transition: .1s ease;
 }
