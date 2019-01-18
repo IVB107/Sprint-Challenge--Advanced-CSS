@@ -11,8 +11,8 @@
     justify-content: flex-start;
     align-items: center;
 }
-.border-radius() {
-    border-radius: 5px;
+.border-radius(@radius: 5px) {
+    border-radius: @radius;
 }
 .link() {
     text-decoration: none;
@@ -23,4 +23,8 @@
     .border-radius;
     background-color: @btn-bg-color;
     color: white;
+    width: 100px;
+    height: 34px;
+    padding: 6px 0;
+    font-size: 1.6rem;
 }
