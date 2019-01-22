@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    - A fully responsive website responds to the size of the viewport at ANY given size, whereas an adaptive website will only adapt to specific viewport sizes. An example of an adaptive website is one that is just pure box model with a few media queries for different devices. An example of a fully responsive website would be one that uses the flexbox model AND media queries that allow it to change as you drag the viewport to any size.
 
 2. Describe what it means to be mobile first vs desktop first.
+    - Mobile-first is a design approach in which the project is designed for a mobile view first, with larger devices designed afterwards (smaller to larger). Desktop-first is the opposite approach: the project is designed for desktop first, and then modified so that it can scale down (larger to smaller);
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    - It allows for rem units to be in base 10. Therefore, 10px === 1rem, 24px === 2.4rem, and so on.
 
 4. How would you describe preprocessing to someone new to CSS?
+    - Preprocessing not only allows you to write clean, easy-to-read CSS, it also gives you access to write powerful, component based styles so that your code is neatly orgnaized. This comes by way of variables, mixins, and media query escapes that allow you to write your styles once and plug them into your code wherever necessary. Once your preprocessor compiles your code, your index.css file is only left with the styles that are actually in use which helps your styles to load faster. Basically, it's the bee's knees and it will make your life much easier!
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    - My favorite concept would have to be mixins. I love the idea of having a "traveling suitcase" of my favorite and frequently-used mixins that I can use across various projects. I also love having the ability to write parametric mixins where I can apply any variable(s) I want to get similar but different outcomes. I think this is also the concept that took me the most practice to get used to.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
